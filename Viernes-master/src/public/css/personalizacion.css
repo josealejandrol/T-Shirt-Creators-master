@@ -1,0 +1,302 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-abr-2016, 18:48:33
+    Author     : Daniel
+*/
+
+@font-face{
+    font-family: Abel;
+    src: url("../fonts/Abel/Abel-Regular.ttf");
+}
+@font-face{
+    font-family: Alegreya Sans;
+    src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+@font-face{
+    font-family: Anton;
+    src: url("../fonts/Anton/Anton.ttf");
+}
+@font-face{
+    font-family: Arimo;
+    src: url("../fonts/Arimo/Arimo-Regular.ttf");
+}
+@font-face{
+    font-family: Arvo;
+    src: url("../fonts/Arvo/Arvo-Regular.ttf");
+}
+@font-face{
+    font-family: Asap;
+    src: url("../fonts/Asap/Asap-Regular.ttf");
+}
+@font-face{
+    font-family: Bitter;
+    src: url("../fonts/Bitter/Bitter-Regular.ttf");
+}
+@font-face{
+    font-family: Bree Serif;
+    src: url("../fonts/Bree_Serif/BreeSerif-Regular.ttf");
+}
+@font-face{
+    font-family: Cabin;
+    src: url("../fonts/Cabin/Cabin-Regular.ttf");
+}
+@font-face{
+    font-family: Candal;
+    src: url("../fonts/Candal/Candal.ttf");
+}
+@font-face{
+    font-family: Covered;
+    src: url("../fonts/Covered_By_Your_Grace/CoveredByYourGrace.ttf");
+}
+@font-face{
+    font-family: Dosis;
+    src: url("../fonts/Dosis/Dosis-Regular.ttf");
+}
+@font-face{
+    font-family: Droid Sans;
+    src: url("../fonts/Droid_Sans/DroidSans.ttf");
+}
+@font-face{
+    font-family: Droid Serif;
+    src: url("../fonts/Droid_Serif/DroidSerif.ttf");
+}
+@font-face{
+    font-family: Fjalla One;
+    src: url("../fonts/Fjalla_One/FjallaOne-Regular.ttf");
+}
+@font-face{
+    font-family: Hind;
+    src: url("../fonts/Hind/Hind-Regular.ttf");
+}
+@font-face{
+    font-family: Inconsolata;
+    src: url("../fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+@font-face{
+    font-family: Indie Flower;
+    src: url("../fonts/Indie_Flower/Indie_Flower.ttf");
+}
+@font-face{
+    font-family: Josefin;
+    src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
+@font-face{
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face{
+    font-family: Libre Baskerville;
+    src: url("../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+}
+#drawingArea{
+    position: absolute;
+    top: 110px;
+    margin-left: 160px;
+
+}
+
+#area-camiseta{
+    width: 480px;
+}
+#tcanvas{
+    border: #0095ad;
+    border-style: solid;
+    border-width: 0.5px;
+
+}
+
+#delantera{
+
+    border-color: #0095ad;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 100px;
+    width: 90px;
+    background-size: cover;
+    /*width: 80px !important;*/
+}
+
+#trasera{
+
+    border-color: #0095ad;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 100px;
+    width: 90px;
+    background-size: cover;
+    /*width: 80px !important;*/
+}
+input[type="button"]{
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    color: black;
+    text-align: center;
+}
+/*input.talla{
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    color: black;
+    text-align: center;
+}*/
+
+/*input[type="button"]:checked{
+    border-style: solid;
+    border-color: #0095ad;
+    border-width: 0.5px;
+    color: #0095ad;
+    text-align: center;
+}*/
+
+.images-genero{
+    border-style: solid;
+    border-color: #0095ad;
+    border-width: 0.5px;
+    height: 100px;
+    width: 90px;
+    overflow:hidden;
+
+}
+.images-dibujos{
+    border-style: solid;
+    border-color: #0095ad;
+    border-width: 0.5px;
+    overflow: hidden;
+    height: 80px;
+    width: 90px;
+    cursor: pointer;
+}
+
+main a{
+    font-family: Hero_propia;
+}
+
+main p{
+    font-family: Hero_propia;
+}
+
+.btn{
+    font-size: small;
+    text-transform: none !important;
+    padding: 0 0.5em !important;
+    line-height: 30px;
+    height: 30px;
+    letter-spacing:normal !important;
+    background-color: #0095ad;
+    z-index: 0;
+
+}
+
+.btn:hover{
+    background-color: #0095ad !important;
+}
+.icono-menu{
+    height: 47px;
+    z-index: 1;
+    position: relative;
+    top: 40px;
+    right: 30px;
+
+}
+
+a.active-genero{
+    color: #0095ad;
+}
+
+a.genero{
+    color: #59595c;
+}
+
+a.boton-active{
+
+    background-color: #59595c;
+}
+a.boton-active:hover{
+
+    background-color: #59595c !important;
+}
+
+#precio{
+    color: #0095ad;
+    font-size: xx-large;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+#anadir-carro{
+    font-size: medium;
+    text-transform: none !important;
+    padding: 0 1em !important;
+    line-height: 40px;
+    height: 40px;
+    letter-spacing:normal !important;
+    background-color: #0095ad;
+
+}
+
+.filled-in[type="checkbox"]:checked + label::after{
+    background-color: #0095ad !important;
+    border: 2px solid #0095ad !important;
+}
+
+label{
+    color: black !important;
+}
+
+.letra-pequena{
+    font-size: small;
+}
+
+.alineacion-txt{
+    background-color: white;
+    border-style: solid;
+    border-color: #0095ad;
+    border-width: 0.5px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+.alineacion-txt:hover{
+
+    background-color: white !important;
+}
+.alineacion-txt i{
+    color: black;
+}
+
+input.textos{
+    height: 1.25rem !important;
+
+}
+
+
+span.simplecolorpicker{
+    border-style: solid !important;
+    border-color: #0095ad !important;
+    border-width: 0.5px!important; 
+    margin-left: 13px;
+    margin-top: 5px;
+}
+#tipo-letra{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+}
+.dropdown-content li > span{
+    color: #59595c;
+    text-align: center;
+}
+#btn-subir{
+    position: relative;
+    top: 18px;
+}
+input[type="text"]{
+    /*background-color: white !important;*/
+    border-bottom: 1px solid #0095ad !important;
+    box-shadow: 0 1px 0 0 #0095ad !important;
+}
